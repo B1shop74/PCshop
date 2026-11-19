@@ -1,0 +1,18 @@
+# Залежності
+node_modules/
+venv/
+
+# Білд
+dist/
+build/
+
+# Секрети
+.env
+.env.local
+
+# Логи
+*.log
+
+# Системне
+.DS_Store
+Thumbs.db

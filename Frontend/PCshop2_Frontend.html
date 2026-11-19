@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart | PC Shop</title>
+<link rel="stylesheet" href="PCshop1_Frontend.css">
+<link rel="stylesheet" href="PCshop2_Frontend.css">
+<base target="_blank">
+</head><body><noscript>
+    JavaScript is disabled. Some features of this website will not work.
+</noscript>
+ 
+<header id="header">
+    <div class="top-bar">
+        <strong class="logo">PC Shop</strong>
+ 
+        <nav class="top-nav">
+            <a href="PCshop1_Frontend.html">Main</a>
+            <a href="#">Goods</a>
+            <a href="#">Info</a>
+        </nav>
+ 
+        <div class="user-actions">
+            <button type="button" class="login-button">Log in</button>
+ 
+            <a href="PCshop2_Frontend.html" class="cart-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>shopping-cart</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.137a60 60 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m12.75 0a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0"/></svg>
+            </a>
+        </div>
+    </div>
+</header>
+ 
+<main class="cart-page">
+    <h1>Your cart</h1>
+ 
+    <div id="cart-list" class="cart-list"></div>
+ 
+    <div id="cart-summary" class="cart-summary" hidden>
+        <div>
+            <div class="cart-total-label">Total</div>
+            <div id="cart-total" class="cart-total"></div>
+            <div id="cart-note" class="cart-note"></div>
+        </div>
+ 
+        <div class="cart-actions">
+            <button type="button" id="cart-clear" class="btn btn-secondary">Clear cart</button>
+            <button type="button" id="cart-checkout" class="btn btn-primary">Checkout</button>
+        </div>
+    </div>
+ 
+    <p><a href="PCshop1_Frontend.html" class="back-link">← Continue shopping</a></p>
+</main>
+ 
+<footer>
+    <p>© 2026 PC Shop</p>
+</footer>
+ 
+<script src="PCshop2_Frontend.js"></script>
+    <script src="PCshop_login.js"></script>
+
+</body></html>
+ 
