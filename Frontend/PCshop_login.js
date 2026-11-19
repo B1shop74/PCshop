@@ -1,5 +1,3 @@
-const AUTH_API_BASE = "http://127.0.0.1:8000"
-
 function authEl(tag, className, text) {
     const node = document.createElement(tag)
     if (className) node.className = className
@@ -8,7 +6,7 @@ function authEl(tag, className, text) {
 }
 
 async function authRequest(path, options = {}) {
-    const response = await fetch(AUTH_API_BASE + path, {
+    const response = await fetch(path, {
         credentials: "include",
         headers: { "Content-Type": "application/json" },
         ...options,

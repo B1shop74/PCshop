@@ -1,4 +1,3 @@
-const API_BASE = "http://127.0.0.1:8000"
 const CART_KEY = "pcshop_cart"
 
 const PLACEHOLDER_IMG = "data:image/svg+xml;utf8," + encodeURIComponent(
@@ -12,7 +11,7 @@ let currentQuery = ""
 let currentCategories = []
 
 async function getProductsByPopular() {
-    const response = await fetch(`${API_BASE}/api/product/popular`)
+    const response = await fetch(`/api/product/popular`)
 
     if (!response.ok) {
         throw new Error(`HTTP ${response.status}`)
@@ -31,7 +30,7 @@ async function getProductsBySearch() {
         params.append("category", category)
     }
 
-    const response = await fetch(`${API_BASE}/api/product/search?${params}`)
+    const response = await fetch(`/api/product/search?${params}`)
 
     if (!response.ok) {
         throw new Error(`HTTP ${response.status}`)
